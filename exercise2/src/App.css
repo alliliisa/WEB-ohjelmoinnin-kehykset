@@ -1,0 +1,14 @@
+.test
+{
+  background-color: yellow;
+}
+
+.bigTitle{
+  background-color: rgba(14, 70, 22, 0.815);
+  color: white;
+  font-size:40px;
+  margin-left: 50px;
+  margin-right: 50px;
+  justify-content: space-evenly;
+  display:flex;
+}

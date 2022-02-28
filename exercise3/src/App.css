@@ -1,0 +1,119 @@
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body{
+  font-family: sans-serif ;
+}
+img{
+  width: 100%;
+  display: block;
+}
+.main-wrapper{
+  background-color: #ffffff;
+  min-height: 100vh;
+  overflow-x: 0;
+}
+.container{
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+.main-title{
+  text-align: center;
+}
+.main-title h1{
+  background-color:rgb(255, 255, 255);
+  box-shadow: 0 0 15px 5px rgba(15, 4, 4, 0.05);
+  border-radius: 5px;
+
+  padding: 16px 0;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+.item-list{
+  margin: 36px 0;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  row-gap: 32px;
+}
+.item{
+  background-color: rgb(255, 255, 255);
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0 0 15px 5px rgba(15, 4, 4, 0.05);
+  transition: all 0.2s ease-out;
+}
+.item:hover{
+  box-shadow: 0 0 10px 1px #3c169459;
+}
+.item-img{
+  position: relative;
+  overflow: hidden;
+}
+.item-img img{
+  width: 70%;
+  margin: 16px auto;
+}
+
+
+.item-img:hover .icon-list{
+  bottom: 26px;
+}
+.tuoteTiedot{
+  padding: 16px;
+  color: #202020;
+  text-align: center;
+}
+.TuoteNimi{
+  font-weight: 500;
+  font-size: 18px;
+  color: #202020;
+  display: block;
+}
+.tuoteHinta{
+  margin: 10px 0;
+  font-weight: 300;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px 0;
+}
+.hinta{
+  font-size: 18px;
+  font-weight: 600;
+  margin-right: 10px;
+}
+.item-detail p{
+  font-weight: 300;
+  opacity: 0.9;
+  font-size: 15px;
+  line-height: 1.7;
+  display: none;
+}
+
+
+
+@media screen and (min-width: 678px){
+  .item-list{
+      grid-template-columns: repeat(2, 1fr);
+      gap: 32px;
+  }
+}
+
+@media screen and (min-width: 768px){
+  .item-list{
+      grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media screen and (max-width: 576px){
+  .details-active .item{
+      grid-template-columns: 100%;
+  }
+}
+
+
